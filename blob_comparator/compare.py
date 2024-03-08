@@ -23,13 +23,13 @@ def cli_argument_parser():
                         help='Relative threshold.',
                         required=False,
                         default=0.0001,
-                        type=str,
+                        type=float,
                         dest='rel_threshold')
     parser.add_argument('--abs_threshold',
                         help='Absolute threshold.',
                         required=False,
                         default=10e-6,
-                        type=str,
+                        type=float,
                         dest='abs_threshold')
     parser.add_argument('--all_values',
                         help='Print all incompantible values.',
